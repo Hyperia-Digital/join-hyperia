@@ -2,6 +2,12 @@
   /**
     Colors
   */
+  --space-indigo: #28253dff;
+  --ink-black: #101a21ff;
+  --sunflower-gold: #ffba49ff;
+  --charcoal-blue: #404c5fff;
+  --night-bordeaux: #5c1229ff;
+
   --color-text: #222;
   --color-background: white;
   --color-light: silver;
@@ -16,12 +22,10 @@
   /**
     Fonts
   */
-  --font-family-sans-serif:
-    system,
-    -apple-system;
+  --font-family-display: "Cinzel", serif;
+  --font-family-serif: "Quattrocento", serif;
+  --font-family-sans-serif:  "Quattrocento Sans", sans-serif;
 
-  @media (prefers-color-scheme: dark) {
-    --color-text: #fff;
-    --color-background: #222;
-  }
+  /* @media (prefers-color-scheme: dark) {
+  } */
 }
