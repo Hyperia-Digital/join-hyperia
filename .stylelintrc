@@ -1,10 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/stylelintrc",
   "extends": [
-    "stylelint-config-standard-scss"
-  ],
-  "plugins": [
-    "stylelint-scss"
+    "stylelint-config-standard"
   ],
   "rules": {
     "no-empty-source": null,

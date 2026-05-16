@@ -1,24 +1,19 @@
 // .eleventy.js
 import esbuild from 'esbuild';
-import { sassPlugin } from 'esbuild-sass-plugin';
 import { execSync } from 'child_process';
 
 export default async function(config) {
 
   /**
-   * Build Sass and JavaScript assets with esbuild
+   * Build JavaScript assets with esbuild
    */
   config.on('afterBuild', () => {
     return esbuild.build({
-      entryPoints: ['src/assets/styles/styles.scss', 'src/assets/scripts/main.js'],
+      entryPoints: ['src/assets/scripts/main.js'],
       outdir: 'public/assets',
       bundle: true,
       minify: false,
-      sourcemap: false,
-      plugins: [sassPlugin({
-        quietDeps: true,
-        loadPaths: ['node_modules'],
-      })],
+      sourcemap: false
     });
   });
 
