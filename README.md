@@ -116,6 +116,10 @@ The project can be run in three different modes:
 npm run dev
 ```
 
+While running locally, you'll see a regular stream of updates and, sometimes, error messages in your terminal.
+
+When you want to stop the server, click the terminal window and type press the **CONTROL** key and the **C** key together.
+
 ## Build for staging
 
 ```bash
