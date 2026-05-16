@@ -1,0 +1,14 @@
+.site-title {
+    font-family: var(--font-family-display);
+}
+
+#navigation {
+    display: flex;
+    border-bottom: 1px solid var(--color-light);
+    margin: var(--unit);
+}
+
+.navigation-item,
+button {
+    padding: calc(var(--unit) / 2);
+}
