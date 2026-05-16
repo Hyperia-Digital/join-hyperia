@@ -15,12 +15,8 @@
     {%- include "partials/meta.njk" -%}
   </head>
   <body {% if pageClass %}class="{{ pageClass | safe }}"{% endif %}>
-    <a class="visually-hidden" href="#main">Skip to content</a>
 
-    <header>
-      {%- include "partials/logo.njk" -%}
-      {%- include "partials/navigation.njk" -%}
-    </header>
+    {%- include "partials/site-header.njk" -%}
 
     {#- Main content -#}
     <main id="main" tabindex="-1" data-pagefind-body>

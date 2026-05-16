@@ -1,0 +1,11 @@
+<a class="visually-hidden" href="#main">Skip to content</a>
+<header class="site-header">
+  {# Site header webcomponent; see main.js for functionality #}
+  <site-header>
+    <span slot="logo">
+      {%- set context="header" -%}
+      {%- include "partials/logo.njk" -%}
+    </span>
+    {%- include "partials/navigation.njk" -%}
+  </site-header>
+</header>
