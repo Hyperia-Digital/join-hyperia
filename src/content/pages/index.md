@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: Hytale community server
-homepage: true
+pageClass: homepage
 ---
 
 <section>
@@ -10,13 +10,13 @@ Hero, welcome
 <section>
 Lore
 </section>
-<section>
+<section id="join" class="join">
 Join
 </section>
 <section>
 Features
 </section>
-<section>
+<section class="join">
 Join
 </section>
 

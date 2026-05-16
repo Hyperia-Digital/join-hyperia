@@ -7,11 +7,12 @@
   --sunflower-gold: #ffba49ff;
   --charcoal-blue: #404c5fff;
   --night-bordeaux: #5c1229ff;
+  --vanilla-cream: #f4ead4ff;
 
-  --color-text: #222;
-  --color-background: white;
-  --color-light: silver;
-  --color-primary: #7950f2;
+  --color-text: var(--vanilla-cream);
+  --color-background: var(--ink-black);
+  --color-light: var(--vanilla-cream);
+  --color-primary: var(--sunflower-gold);
 
   /**
     Spacing and units
@@ -24,8 +25,8 @@
   */
   --font-family-display: "Cinzel", serif;
   --font-family-serif: "Quattrocento", serif;
-  --font-family-sans-serif:  "Quattrocento Sans", sans-serif;
+  --font-family-sans-serif: "Quattrocento Sans", sans-serif;
 
-  /* @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: light) {
   } */
 }

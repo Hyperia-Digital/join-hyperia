@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("branding.css");
+@import url("homepage.css");
 
 /**
  * ZeroPoint starter styling
@@ -15,8 +16,6 @@ a {
 }
 
 #main {
-  max-width: var(--container-width);
-  margin: calc(var(--unit) * 5) auto;
 }
 
 #navigation {
@@ -25,11 +24,8 @@ a {
   margin: var(--unit);
 }
 
-#footer {
-  margin: auto;
-  max-width: var(--container-width);
-  border-top: 1px solid var(--color-light);
-  text-align: center;
+.site-footer {
+  background-color: var(--ink-black);
 }
 
 hr {
@@ -41,7 +37,6 @@ img {
 }
 
 .navigation-item,
-.navigation-label,
 button {
   padding: calc(var(--unit) / 2);
 }
@@ -64,8 +59,4 @@ textarea {
 
 button {
   margin: 0;
-}
-
-label {
-  padding: calc(var(--unit) / 2) 0;
 }
