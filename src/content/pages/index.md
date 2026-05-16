@@ -1,16 +1,23 @@
 ---
 permalink: /
-title: Up to zero! 🪐
+title: Hytale community server
+homepage: true
 ---
 
-## Get started
+<section>
+Hero, welcome
+</section>
+<section>
+Lore
+</section>
+<section>
+Join
+</section>
+<section>
+Features
+</section>
+<section>
+Join
+</section>
 
-You can write content in HTML, [Markdown](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet), or [Nunjucks](https://mozilla.github.io/nunjucks/). This page is written in Markdown.
 
-* Edit this page: `content/pages/index.md`
-* Add or edit navigation: `src/data/navigation.json`
-* Change colors and styles: `src/assets/styles/`
-
----
-
-<img src="/assets/images/favicon.svg" alt="Logo">

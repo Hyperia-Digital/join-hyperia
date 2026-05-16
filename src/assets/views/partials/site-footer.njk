@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  {%- include "partials/logo.njk" -%}
+  <ul role="list">
+    {%- for item in navigation.items -%}
+      {%- if item.text != "Search" -%}
+        <li>
+          <a href="{{ item.url }}" class="footer-link">{{ item.text }}</a>
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+    <li><a href="#">Privacy policy</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  &copy; {% year %}
+  {{ site.owner }}
+</footer>

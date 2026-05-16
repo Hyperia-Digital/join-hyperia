@@ -1,4 +1,4 @@
-<div class="navigation-item {{ dropdown }}">
+<li class="navigation-item {{ dropdown }}">
   <a
     class="navigation-link {{ active }} {{ dropdownToggle }}"
     href="{{ itemUrl }}"
@@ -7,14 +7,14 @@
     {{- target | safe -}}
     {#- {{ dropdownAttributes | safe }} -#}
   >
-    {{- item.text -}}
+    {{ - item.text - }}
   </a>
 
   {# {%- if hasSubmenu -%}
-    <div class="dropdown-menu">
+    <ul role="list" class="dropdown-menu">
       {%- for subitem in item.submenuitems -%}
-        <a class="dropdown-item{% if subitem.url | lower == page.url | lower %} active{% endif %}" href="{{ subitem.url }}">{{ subitem.text | safe }}</a>
+        <li><a class="dropdown-item{% if subitem.url | lower == page.url | lower %} active{% endif %}" href="{{ subitem.url }}">{{ subitem.text | safe }}</a></li>
       {%- endfor -%}
-    </div>
+    </ul>
   {%- endif -%} #}
-</div>
+</li>

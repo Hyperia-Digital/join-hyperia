@@ -1,34 +1,32 @@
 <nav id="navigation" role="navigation">
-  <span class="navigation-label">Navigation:</span>
+  <ul role="list">
+    {%- for item in navigation.items -%}
+      {#- Set attributes and classes to blank to start -#}
+      {%- set relAttribute = '' -%}
+      {%- set currentAttribute = '' -%}
+      {%- set itemUrl = item.url -%}
+      {%- set target = '' -%}
+      {%- set active = '' -%}
+      {%- set hasSubmenu = '' -%}
+      {%- set dropdown = '' -%}
+      {%- set dropdownToggle = '' -%}
+      {%- set dropdownAttributes = '' -%}
 
-  {%- for item in navigation.items -%}
+      {#- Set Attributes -#}
+      {%- if item.rel -%}
+        {%- set relAttribute = ' rel="' + item.rel + '"' -%}
+      {%- endif -%}
 
-    {#- Set attributes and classes to blank to start -#}
-    {%- set relAttribute = '' -%}
-    {%- set currentAttribute = '' -%}
-    {%- set itemUrl = item.url -%}
-    {%- set target = '' -%}
-    {%- set active = '' -%}
-    {%- set hasSubmenu = '' -%}
-    {%- set dropdown = '' -%}
-    {%- set dropdownToggle = '' -%}
-    {%- set dropdownAttributes = '' -%}
+      {%- if page.url | lower == item.url | lower -%}
+        {%- set currentAttribute = ' aria-current="page"' -%}
+        {%- set active = 'active' -%}
+      {%- endif -%}
 
-    {#- Set Attributes -#}
-    {%- if item.rel -%}
-      {%- set relAttribute = ' rel="' + item.rel + '"' -%}
-    {%- endif -%}
+      {%- if item.external == true -%}
+        {%- set relAttribute = 'noopener noreferrer' -%}
+      {%- endif -%}
 
-    {%- if page.url | lower == item.url | lower -%}
-      {%- set currentAttribute = ' aria-current="page"' -%}
-      {%- set active = 'active' -%}
-    {%- endif -%}
-
-    {%- if item.external == true -%}
-      {%- set relAttribute = 'noopener noreferrer' -%}
-    {%- endif -%}
-
-    {#- {% if item.submenuitems | length %}
+      {#- {% if item.submenuitems | length %}
       {% set hasSubmenu = true %}
       {% set dropdown = 'dropdown' %}
       {% set dropdownToggle = 'dropdown-toggle' %}
@@ -36,11 +34,11 @@
       {% set itemUrl = '#' %}
     {% endif %} -#}
 
-    {#- {% if item.external %}
+      {#- {% if item.external %}
       {% set target = 'target="_blank"' %}
     {% endif %} -#}
 
-    {%- include "partials/nav-item.njk" -%}
-
-  {%- endfor -%}
+      {%- include "partials/nav-item.njk" -%}
+    {%- endfor -%}
+  </ul>
 </nav>
