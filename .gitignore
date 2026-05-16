@@ -1,0 +1,20 @@
+# dependencies installed by npm
+node_modules
+
+# build artifacts
+public
+.cache/
+
+# secrets and errors
+.env
+.log
+
+# macOS related files
+.DS_Store
+
+# Windows related files
+Thumbs.db
+Desktop.ini
+
+# Local Netlify folder
+.netlify
