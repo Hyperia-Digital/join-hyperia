@@ -3,7 +3,10 @@ The public-facing website for Hyperia, a RP-focused Hytale server.
 
 Built using the [Eleventy](https://www.11ty.dev/) static site generator and the [ZeroPoint](https://getzeropoint.com/) starter kit.
 
+---
+
 # How to get started with this site
+
 <details>
 <summary><strong>🆕 Is this your first time working with this codebase? If so, click here!</strong></summary>
 
@@ -97,6 +100,9 @@ Going forward, you can click on that folder (instead of **Sites**) and use it to
 
 After the dependencies are installed, you're readyk to go! 🎉
 </details>
+<br>
+
+---
 
 # Running the project
 The project can be run in three different modes:
@@ -121,7 +127,10 @@ npm run staging
 ```bash
 npm run production
 ```
-## Start building your website
+
+---
+
+# Start building your website
 
 Create and edit your site **right from this readme file!**.
 
@@ -177,17 +186,16 @@ Learning CSS can be daunting but there are a ton of useful resources on the web.
 
 </details>
 
-<details>
-  <summary><strong>🚀 Deploy your site</strong></summary>
+---
 
-## Deploy your site
+# Deploying the site
 
 Once you set up deployment, any time you commit to your repository's `main` branch, GitHub will build and deploy your site.
 
 <details>
   <summary><strong>Deploy to GitHub Pages</strong></summary>
 
-### Setup:
+## Setup:
 
 1. [Enable GitHub Pages](https://github.com/Hyperia-Digital/join-hyperia/settings/pages) in your repository settings, choose "GitHub Actions" as the source.
 2. [Allow "Read and write permissions" for GitHub Workflows](https://github.com/Hyperia-Digital/join-hyperia/settings/actions) in your repository settings for the GitHub Actions workflow to run.
@@ -197,18 +205,16 @@ Once you set up deployment, any time you commit to your repository's `main` bran
 <details>
   <summary><strong>Deploy to Netlify</strong></summary>
 
-### Setup:
+## Setup:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Hyperia-Digital/join-hyperia/)
 
 
 </details>
 
-</details>
-
 ---
 
-## Project structure
+# Project structure
 
 Ready to go deeper? Here's how the project files are organized
 
@@ -248,4 +254,3 @@ example.com                 # → Root of your project
 ## Eleventy Configuration
 
 The Eleventy configuration is abstracted from the typical `.eleventy.js` file and moved to `/src/config/` for easy organization and configuration of collections, filters, passthroughs, etc.
-
