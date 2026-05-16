@@ -5,6 +5,14 @@
 
 export default {
   /**
+   * Copy scripts to the `public` directory
+   */
+  async scripts(eleventyConfig) {
+    const config = { 'src/assets/scripts': 'assets/scripts' };
+
+    eleventyConfig.addPassthroughCopy(config);
+  },
+  /**
    * Copy fonts to the `public` directory
    */
   async fonts(eleventyConfig) {
