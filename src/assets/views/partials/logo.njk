@@ -1,8 +1,12 @@
-<div class="site-logo-container">
+<a href="/" class="site-logo-container">
+  {% set el = "span" %}
+  {% if context == "header" %}
+    {% set el = "h1" %}
+  {% endif %}
   <img
     src="/assets/images/hyperia-logo-transparent.png"
     alt="Hyperia"
     class="site-logo"
   >
-  <h1 class="site-title">{{ site.name }}</h1>
-</div>
+  <{{el}} class="site-title">{{ site.name }}</{{el}}>
+</a>
