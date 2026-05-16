@@ -13,6 +13,7 @@
   --color-background: var(--ink-black);
   --color-light: var(--vanilla-cream);
   --color-primary: var(--sunflower-gold);
+  --color-primary-hover: var(--vanilla-cream);
 
   /**
     Spacing and units

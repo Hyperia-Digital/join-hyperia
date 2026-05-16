@@ -1,11 +1,16 @@
 body {
-    color: var(--color-text);
     background-color: var(--color-background);
+    color: var(--color-text);
     font-family: var(--font-family-sans-serif);
 }
 
 a {
     color: var(--color-primary);
+    transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+    color: var(--color-primary-hover);
 }
 
 hr {
@@ -19,8 +24,9 @@ img {
 label,
 input,
 textarea {
-    width: 100%;
     display: block;
+
+    width: 100%;
 }
 
 button {
